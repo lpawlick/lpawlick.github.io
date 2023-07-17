@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="/_static/fonts/fonts.css" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="5F021F">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+  
+    <title>Model Notes Tab &#8212; SD Model Notes</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Generation Interface" href="generation.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=red data-md-color-accent=red>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#pages/model_notes_tab" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="SD Model Notes"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">SD Model Notes</span>
+          <span class="md-header-nav__topic"> Model Notes Tab </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">SD Model Notes</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="SD Model Notes" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="SD Model Notes">SD Model Notes</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="installation.html" class="md-nav__link">Installation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Model Notes Tab </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Model Notes Tab</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/pages/model_notes_tab.md.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#model-tabs" class="md-nav__link">Model Tabs</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#civitai" class="md-nav__link">Civitai</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#models" class="md-nav__link">Models</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#download-overwrite-existing-notes" class="md-nav__link">Download: Overwrite existing Notes</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#convert-html-to-markdown" class="md-nav__link">Convert Html to Markdown</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#download-preview-image-from-civitai" class="md-nav__link">Download preview image from Civitai</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#overwrite-existing-preview-images" class="md-nav__link">Overwrite existing preview images</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#download-result" class="md-nav__link">Download Result</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#import" class="md-nav__link">Import</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#import-formats" class="md-nav__link">Import Formats</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#import-from-the-models-folder" class="md-nav__link">Import from the models folder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#import-directory-path" class="md-nav__link">Import Directory Path</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#import-filename" class="md-nav__link">Import Filename</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#import-overwrite-existing-notes" class="md-nav__link">Import: Overwrite existing notes</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#import-result" class="md-nav__link">Import Result</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#export" class="md-nav__link">Export</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#export-format" class="md-nav__link">Export Format</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#export-into-the-models-folder" class="md-nav__link">Export into the models folder</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#export-directory-path" class="md-nav__link">Export Directory Path</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#export-filename" class="md-nav__link">Export Filename</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#export-overwrite-existing-notes" class="md-nav__link">Export: Overwrite existing notes</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#export-result" class="md-nav__link">Export Result</a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="generation.html" class="md-nav__link">Generation Interface</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="extra_models.html" class="md-nav__link">Extra Models</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="settings.html" class="md-nav__link">Settings</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/pages/model_notes_tab.md.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="model-notes-tab">
+<h1 id="pages-model-notes-tab--page-root">Model Notes Tab<a class="headerlink" href="#pages-model-notes-tab--page-root" title="Permalink to this heading">¶</a></h1>
+<p>The tab that gets added when installing this extension.</p>
+<section id="model-tabs">
+<h2 id="model-tabs">Model Tabs<a class="headerlink" href="#model-tabs" title="Permalink to this heading">¶</a></h2>
+<p><img alt="The overview of the model tabs" src="../_images/notes_tab_models_overview.png"/></p>
+<p>Allows editing notes for the supported models.
+Currently the following models are supported:</p>
+<ul class="simple">
+<li><p>Textual Inversion</p></li>
+<li><p>Hypernetworks</p></li>
+<li><p>Checkpoints</p></li>
+<li><p>LoRA</p></li>
+</ul>
+<p>Select a Model tab of your choosing, select a model from the Dropdown and edit your note.</p>
+<p>If Markdown is enabled then you need to press the <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">Markdown</span> <span class="pre">✏️</span></code> button to edit the note, you are then presented with a markdown editor and a preview of the written markdown.</p>
+<p>Get the description from <a class="reference external" href="https://civitai.com">Civitai</a> by pressing the <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">description</span> <span class="pre">from</span> <span class="pre">Civitai</span></code> which will replace the existing note if it exists.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Model Notes are only saved if you press the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">💾</span></code> Button or automatically if autosaving is enabled in the Settings!</p>
+</div>
+</section>
+<section id="civitai">
+<h2 id="civitai">Civitai<a class="headerlink" href="#civitai" title="Permalink to this heading">¶</a></h2>
+<p><img alt="Overview of the civitai tab" src="../_images/notes_tab_civitai_overview.png"/></p>
+<p>In this tab notes can be downloaded from <a class="reference external" href="https://civitai.com">civitai</a> descriptions and preview images from <a class="reference external" href="https://civitai.com">civitai</a> previews.</p>
+<section id="models">
+<h3 id="models">Models<a class="headerlink" href="#models" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The multiselect checkbox for the model types in the model tab" src="../_images/notes_tab_civitai_models.png"/></p>
+<p>Select the Model Types you want to download notes for. It will iterate over all selected models that are one of the selected types and will ignore all models types that are not selected. This uses the built in logic of the webui to determine the model type.</p>
+</section>
+<section id="download-overwrite-existing-notes">
+<h3 id="download-overwrite-existing-notes">Download: Overwrite existing Notes<a class="headerlink" href="#download-overwrite-existing-notes" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox to overwrite existing notes" src="../_images/notes_tab_civitai_overwrite_notes.png"/></p>
+<p>If checked then any existing notes will be overwritten with the descriptions from civitai, otherwise these notes will be skipped.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Any overwritten notes cannot be recovered, unless you have a backup!</p>
+</div>
+</section>
+<section id="convert-html-to-markdown">
+<h3 id="convert-html-to-markdown">Convert Html to Markdown<a class="headerlink" href="#convert-html-to-markdown" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox to convert html to markdown" src="../_images/notes_tab_civitai_convert_html.png"/></p>
+<p>If checked then it will try to convert the html tags to markdown. This will should preserve any formatting, like <strong>bold</strong> or <em>italic</em> text, <a class="reference external" href="https://github.com/lpawlick/sd-webui-model-notes">links</a> or images. Otherwise any html tags will be stripped and only the raw text will be kept.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option is only available if markdown support is enabled in the settings!</p>
+</div>
+</section>
+<section id="download-preview-image-from-civitai">
+<h3 id="download-preview-image-from-civitai">Download preview image from Civitai<a class="headerlink" href="#download-preview-image-from-civitai" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox to download the preview image from civitai" src="../_images/notes_tab_civitai_dl_preview.png"/></p>
+<p>If checked then it will download the preview image, which is shown in the extra networks tab, from civitai. It will download the first image from the <code class="docutils literal notranslate"><span class="pre">images</span></code> field returned by <a class="reference external" href="https://github.com/civitai/civitai/wiki/REST-API-Reference#get-apiv1models-versionsby-hashhash">this</a> Civitai endpoint.
+If unchecked then no images will be downloaded</p>
+</section>
+<section id="overwrite-existing-preview-images">
+<h3 id="overwrite-existing-preview-images">Overwrite existing preview images<a class="headerlink" href="#overwrite-existing-preview-images" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox if the preview images should be overwritten" src="../_images/notes_tab_civitai_overwrite_preview.png"/></p>
+<p>If checked then it will overwrite any existing preview images. Otherwise it will downloading any previews for models that already have one.</p>
+</section>
+<section id="download-result">
+<h3 id="download-result">Download Result<a class="headerlink" href="#download-result" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The output from the notes download" src="../_images/notes_tab_civitai_result.png"/></p>
+<p>Shows a progressbar and the statistics of the download once finished.
+First it lists the model type the statistics apply to, then how many descriptions were downloaded, how many were skipped and how many failed. If downloading previews was enabled then it will show the same information about the previews.
+A successful download is a note or preview that was downloaded and saved without any exception. A download was skipped when the selected options prevented it from being downloaded, for example when a note already exists and the overwrite option was not selected. A downloaded failed if either the model was not found on civitai or if the model has no descriptions or preview image.
+If an exception occurs then the download will be aborted and the exception will be shown in the console.</p>
+</section>
+</section>
+<section id="import">
+<h2 id="import">Import<a class="headerlink" href="#import" title="Permalink to this heading">¶</a></h2>
+<p><img alt="Overview of the import tab" src="../_images/notes_tab_import_overview.png"/></p>
+<p>Import notes from other extensions or applications in a variety of formats.</p>
+<section id="import-formats">
+<h3 id="import-formats">Import Formats<a class="headerlink" href="#import-formats" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The multiselect checkbox for the import formats" src="../_images/notes_tab_import_formats.png"/></p>
+<p>The file format of the notes that should be imported.
+Html will be converted to markdown regardless if markdown support is enabled.</p>
+</section>
+<section id="import-from-the-models-folder">
+<h3 id="import-from-the-models-folder">Import from the models folder<a class="headerlink" href="#import-from-the-models-folder" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox if model notes should be read from the models folder" src="../_images/notes_tab_import_from_models_folder.png"/></p>
+<p>If checked then it will search for model notes in the same folders as the models are. This uses the paths provided by the webui.</p>
+</section>
+<section id="import-directory-path">
+<h3 id="import-directory-path">Import Directory Path<a class="headerlink" href="#import-directory-path" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The textbox where you can enter the directory" src="../_images/notes_tab_import_directory_path.png"/></p>
+<p>The directory where notes should be imported from. Should be the full path to the directory, for example <code class="docutils literal notranslate"><span class="pre">C:\Users\%username%\stable-diffusion-webui\models\</span></code> or <code class="docutils literal notranslate"><span class="pre">/home/$USER/stable-diffusion-webui/models/</span></code>.
+This option is only visible if <code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">models</span> <span class="pre">folder</span></code> is unchecked.</p>
+</section>
+<section id="import-filename">
+<h3 id="import-filename">Import Filename<a class="headerlink" href="#import-filename" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The dropdown where the import filename is selected" src="../_images/notes_tab_import_filename.png"/></p>
+<p>How the note file name should be mapped to the model file. It has the following options:</p>
+<ul class="simple">
+<li><p>Model Name: The note file has the same name as the model file but with the selected format extension, for example if the model file name is <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.safetensors</span></code> then the note file should be in the same folder (or the selected folder) named <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.txt</span></code>or <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.md</span></code> based on the selected import format.</p></li>
+<li><p>Sha256: The note is named like the sha256 hash of the model file, for example the model name is the model file name is <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.safetensors</span></code> and the sha256 of that file is <code class="docutils literal notranslate"><span class="pre">ad2a33c361c1f593c4a1fb32ea81afce2b5bb7d1983c6b94793a26a3b54b08a0</span></code> and the note file should be in the same folder (or the selected folder) and named <code class="docutils literal notranslate"><span class="pre">ad2a33c361c1f593c4a1fb32ea81afce2b5bb7d1983c6b94793a26a3b54b08a0.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">ad2a33c361c1f593c4a1fb32ea81afce2b5bb7d1983c6b94793a26a3b54b08a0.md</span></code> based on the selected import format.</p></li>
+</ul>
+</section>
+<section id="import-overwrite-existing-notes">
+<h3 id="import-overwrite-existing-notes">Import: Overwrite existing notes<a class="headerlink" href="#import-overwrite-existing-notes" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox if existing notes should be overwritten" src="../_images/notes_tab_import_overwrite.png"/></p>
+<p>If checked then any existing notes will be overwritten by the imported notes. Otherwise models with existing notes will be skipped.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Any overwritten notes cannot be recovered, unless you have a backup!</p>
+</div>
+</section>
+<section id="import-result">
+<h3 id="import-result">Import Result<a class="headerlink" href="#import-result" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The output of the import process" src="../_images/notes_tab_import_result.png"/></p>
+<p>It lists the amount of notes it successfully imported, how many notes could not be mapped to any models, how many notes were skipped and how many failed to import.
+A successful import is a note that was imported without any exception. No Note means no model could be mapped to the note. An import was skipped when the selected options prevented it from being imported, for example when a note already exists and the overwrite option was not selected. Notes failed to import if the note file could not be read or an exception occurred while importing the note. Any exception will be shown in the console. Any exceptions will be shown in the console.</p>
+</section>
+</section>
+<section id="export">
+<h2 id="export">Export<a class="headerlink" href="#export" title="Permalink to this heading">¶</a></h2>
+<p><img alt="An overview of the export tab" src="../_images/notes_tab_export_overview.png"/></p>
+<p>Exports notes to local files or a csv chart for external tools.</p>
+<section id="export-format">
+<h3 id="export-format">Export Format<a class="headerlink" href="#export-format" title="Permalink to this heading">¶</a></h3>
+<p><img alt="A dropdown with the available export formats" src="../_images/notes_tab_import_formats.png"/></p>
+<p>The file format of the notes that should be exported.
+Text and Markdown will be converted to html if the html format is selected.</p>
+</section>
+<section id="export-into-the-models-folder">
+<h3 id="export-into-the-models-folder">Export into the models folder<a class="headerlink" href="#export-into-the-models-folder" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox if the notes should be exported to the models folders" src="../_images/notes_tab_export_directory.png"/></p>
+<p>If checked then it will export the model notes into the folders where the models are located. This uses the paths provided by the webui.</p>
+</section>
+<section id="export-directory-path">
+<h3 id="export-directory-path">Export Directory Path<a class="headerlink" href="#export-directory-path" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The textbox where you can enter the directory" src="../_images/notes_tab_export_directory_path.png"/></p>
+<p>The directory where notes should be exported to. Should be the full path to the directory or file in the case of the csv file. For example <code class="docutils literal notranslate"><span class="pre">C:\Users\%username%\stable-diffusion-webui\models\</span></code> or <code class="docutils literal notranslate"><span class="pre">/home/$USER/stable-diffusion-webui/models/</span></code>.
+This option is only visible if <code class="docutils literal notranslate"><span class="pre">Export</span> <span class="pre">into</span> <span class="pre">the</span> <span class="pre">models</span> <span class="pre">folder</span></code> is unchecked.</p>
+</section>
+<section id="export-filename">
+<h3 id="export-filename">Export Filename<a class="headerlink" href="#export-filename" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The dropdown that contains the possible export names" src="../_images/notes_tab_export_filename.png"/></p>
+<p>How the note file should be named. If csv was picked as an export option then this will define the first column. It has the following options:</p>
+<ul class="simple">
+<li><p>Model Name: The note file has the same name as the model file but with the selected format extension, for example if the model file name is <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.safetensors</span></code> then the note file should be in the same folder (or the selected folder) named <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.txt</span></code>or <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.md</span></code> based on the selected export format.</p></li>
+<li><p>Sha256: The note is named like the sha256 hash of the model file, for example the model name is the model file name is <code class="docutils literal notranslate"><span class="pre">v2-1_768-nonema-pruned.safetensors</span></code> and the sha256 of that file is <code class="docutils literal notranslate"><span class="pre">ad2a33c361c1f593c4a1fb32ea81afce2b5bb7d1983c6b94793a26a3b54b08a0</span></code> and the note file should be in the same folder (or the selected folder) and named <code class="docutils literal notranslate"><span class="pre">ad2a33c361c1f593c4a1fb32ea81afce2b5bb7d1983c6b94793a26a3b54b08a0.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">ad2a33c361c1f593c4a1fb32ea81afce2b5bb7d1983c6b94793a26a3b54b08a0.md</span></code> based on the selected export format.</p></li>
+</ul>
+</section>
+<section id="export-overwrite-existing-notes">
+<h3 id="export-overwrite-existing-notes">Export: Overwrite existing notes<a class="headerlink" href="#export-overwrite-existing-notes" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The checkbox if checked it will override existing note files" src="../_images/notes_tab_export_overwrite.png"/></p>
+<p>If checked then any existing note files will be overwritten by the exported notes. Otherwise models existing notes will be skipped.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Any overwritten notes cannot be recovered, unless you have a backup!</p>
+</div>
+</section>
+<section id="export-result">
+<h3 id="export-result">Export Result<a class="headerlink" href="#export-result" title="Permalink to this heading">¶</a></h3>
+<p><img alt="The output of the export process" src="../_images/notes_tab_export_result.png"/></p>
+<p>It lists the path or file where the notes where exported to. It also lists how many notes were successfully exported, how many notes where empty or could not be found an how many notes failed to export. The reason for a failed export will be shown in the console.</p>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="installation.html" title="Installation"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> Installation </span>
+              </div>
+            </a>
+          
+          
+            <a href="generation.html" title="Generation Interface"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> Generation Interface </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2023, lpawlick.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 7.0.1.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
