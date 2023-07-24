@@ -311,7 +311,7 @@ The only required arguments are the unique <cite>id</cite>, the <cite>client_id<
 All possible filter options can be found in the <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> enum.</p>
 <p>Lastly additional features like multiselect can be enabled or disabled with <cite>enabled_features</cite> or <cite>disabled_features</cite>.
 Some, if not all, appear to be experimental and subject to change. Additionally there appears to exist no documentation about them.
-At the time of writing all Features can be fount in the enum <code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code> but any future features, which are not yet present in this enum, should be supported as well.</p>
+At the time of writing all Features can be found in the enum <code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code> but any future features, which are not yet present in this enum, should be supported as well if just passed as a string.</p>
 </section>
 <section id="opening-and-closing-the-picker">
 <h2 id="opening-and-closing-the-picker">Opening and closing the Picker<a class="headerlink" href="#opening-and-closing-the-picker" title="Permalink to this heading">¶</a></h2>
@@ -346,8 +346,8 @@ It is generally recommended to use a toggle like shown above because the attribu
     <span class="k">return</span> <span class="sa">f</span><span class="s1">'Action: </span><span class="si">{</span><span class="n">action</span><span class="si">}</span><span class="s1">'</span>
 </pre></div>
 </div>
-<p>The <cite>action</cite> attribute contains the current user action. If it is “loaded” then the user logged in with google and the google picker just opened.
-If it is “picked” then the user selected a document and hit confirm, it is recommended to use the <cite>documents</cite> (see below) attribute instead of checking for this action.
+<p>The <cite>action</cite> attribute contains the current user action. If it is “loaded” then the user logged in with google and the google picker popup just opened.
+If it is “picked” then the user selected a document and hit confirm, it is recommended to use the <cite>documents</cite> (see below) attribute instead if code should be run when documents were selected.
 Lastly if the “action” is “cancelled” then the user logged in with google but closed the google picker without picking any documents.</p>
 </section>
 <section id="interacting-with-picked-files">
@@ -366,7 +366,7 @@ Lastly if the “action” is “cancelled” then the user logged in with googl
 <p>The <cite>document</cite> attribute contains the raw data (or <cite>None</cite>) when documents were selected.
 This raw data can be converted to a list of <code class="xref py py-class docutils literal notranslate"><span class="pre">GoogleDocument</span></code> with the help of <code class="xref py py-class docutils literal notranslate"><span class="pre">GoogleDocuments</span></code>.
 A <code class="xref py py-class docutils literal notranslate"><span class="pre">GoogleDocument</span></code> is essentially just a dictionary, however certain keys might only be present with certain file types.
-All keys can be found <a class="reference external" href="https://developers.google.com/drive/picker/reference#document">here</a></p>
+All keys can be found <a class="reference external" href="https://developers.google.com/drive/picker/reference#document">here</a>.</p>
 </section>
 </section>
 
