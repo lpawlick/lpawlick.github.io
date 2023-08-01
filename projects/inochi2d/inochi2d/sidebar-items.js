@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["Anim","BlendMode","Node","Texture"],"mod":["gl","glow"],"struct":["IterParamValues","Mask","Meta","Model","ParamValues","Puppet","Transform"],"type":["TextureReceiver"]};

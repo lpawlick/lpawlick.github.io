@@ -1,1 +1,0 @@
-window.ALL_CRATES = ["bitflags","glfw","inochi2d","itoa","raw_window_handle","render","ryu","serde","serde_derive","serde_json"];

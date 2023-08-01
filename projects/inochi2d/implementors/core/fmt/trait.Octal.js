@@ -1,3 +1,0 @@
-(function() {var implementors = {
-"glfw":[["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Octal.html\" title=\"trait core::fmt::Octal\">Octal</a> for <a class=\"struct\" href=\"glfw/struct.Modifiers.html\" title=\"struct glfw::Modifiers\">Modifiers</a>"],["impl <a class=\"trait\" href=\"https://doc.rust-lang.org/nightly/core/fmt/trait.Octal.html\" title=\"trait core::fmt::Octal\">Octal</a> for <a class=\"struct\" href=\"glfw/struct.JoystickHats.html\" title=\"struct glfw::JoystickHats\">JoystickHats</a>"]]
-};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
