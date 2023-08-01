@@ -12,6 +12,11 @@ The Dash Google Picker is a [Dash](https://plotly.com/dash) component designed t
 With this module, developers can easily implement Google Picker functionality into their Dash applications, allowing users to select files from their Google Drive account.
 More information can be found in the [Google Picker Overview](https://developers.google.com/drive/picker/guides/overview).
 
+### [inochi2d](/projects/inochi2d)
+
+A pure Rust implementation of [Inochi2D](https://inochi2d.com), the realtime 2D puppet animation framework.
+This is currently done using [serde\_json](https://crates.io/crates/serde_json) for parsing, as well as [GLFW](https://www.glfw.org) and [glow](https://crates.io/crates/glow) for the rendering, using OpenGL ES 2.0.
+
 ### [stable-diffusion-webui model notes](/projects/sd-webui-model-notes)
 
 This is an extension for the [AUTOMATIC1111 webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui), which enables the creating, editing and deleting of notes for stable diffusion models, embeddings, hypernetworks and LoRAs right within the generation interface. Additionally it allows to downloading notes and import or export them in a variety of formats.
