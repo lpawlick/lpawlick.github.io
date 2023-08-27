@@ -252,6 +252,41 @@
     <li class="md-nav__item">
     
     
+      <a href="#views" class="md-nav__link">Views</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#dash_google_picker.Views.ViewGroup" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">ViewGroup</span></code></a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#dash_google_picker.Views.ViewGroup.add" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">ViewGroup.add()</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#dash_google_picker.Views.ViewGroup.remove" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">ViewGroup.remove()</span></code></a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#dash_google_picker.Views.ViewGroup.to_plotly_json" class="md-nav__link"><code class="docutils literal notranslate"><span class="pre">ViewGroup.to_plotly_json()</span></code></a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
       <a href="#enums" class="md-nav__link">Enums</a>
       <ul class="md-nav__list"> 
     <li class="md-nav__item">
@@ -953,6 +988,56 @@ the properties of a Google Document as per the Google Picker API.</p>
 <p class="admonition-title">Note</p>
 <p>Only data from the Google Picker API returned by the <code class="xref py py-class docutils literal notranslate"><span class="pre">GooglePicker</span></code> should be passed into this class.</p>
 </div>
+</dd></dl>
+</section>
+<section id="views">
+<h2 id="views">Views<a class="headerlink" href="#views" title="Permalink to this heading">¶</a></h2>
+<p>The Views that can be passed into the Google Picker</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="dash_google_picker.Views.ViewGroup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dash_google_picker.Views.</span></span><span class="sig-name descname"><span class="pre">ViewGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dash_google_picker.Views.ViewGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>A ViewGroup is a collection of one or many Views. It can be used to group Views into a separate tab in the <code class="xref py py-class docutils literal notranslate"><span class="pre">GooglePicker</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.List" title="(in Python v3.11)"><em>List</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – One or many <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> or <a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewGroup</span></code></a>. The first argument needs to be a <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> which is the root view for this group.</p></li>
+<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Optional" title="(in Python v3.11)"><em>Optional</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – The label shown only on the root view of this group.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="dash_google_picker.Views.ViewGroup.add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><span class="pre">ViewGroup</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dash_google_picker.Views.ViewGroup.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a new View to the ViewGroup.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>view</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><em>Union</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><em>ViewGroup</em></a><em>]</em>) – A <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> or <a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewGroup</span></code></a> to add to this ViewGroup.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="dash_google_picker.Views.ViewGroup.remove">
+<span class="sig-name descname"><span class="pre">remove</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><span class="pre">ViewGroup</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dash_google_picker.Views.ViewGroup.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a view from the ViewGroup.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>view</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><em>Union</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><em>ViewGroup</em></a><em>]</em>) – A <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> or <a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewGroup</span></code></a> to remove from this ViewGroup.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="dash_google_picker.Views.ViewGroup.to_plotly_json">
+<span class="sig-name descname"><span class="pre">to_plotly_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Dict" title="(in Python v3.11)"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.List" title="(in Python v3.11)"><span class="pre">List</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><span class="pre">ViewGroup</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dash_google_picker.Views.ViewGroup.to_plotly_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the ViewGroup to a dictionary for plotly. This is used internally by dash to pass the ViewGroup to the react frontend.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A dictionary representing the ViewGroup.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Dict" title="(in Python v3.11)"><em>Dict</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)">str</a>, <a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><em>Union</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)">str</a>, <a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.List" title="(in Python v3.11)"><em>List</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Union" title="(in Python v3.11)"><em>Union</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)">str</a>, <a class="reference internal" href="#dash_google_picker.Views.ViewGroup" title="dash_google_picker.Views.ViewGroup"><em>ViewGroup</em></a>]]]]</p>
+</dd>
+</dl>
+</dd></dl>
 </dd></dl>
 </section>
 <section id="enums">

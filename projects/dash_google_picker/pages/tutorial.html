@@ -314,8 +314,8 @@
 </div>
 <p>Create the google picker like every other dash component.
 The only required arguments are the unique <cite>id</cite>, the <cite>client_id</cite> and the <cite>developer_key</cite> which are both obtained from the google cloud console.
-<cite>view_ids</cite> is optional but can be used to filter what document types should be show.
-All possible filter options can be found in the <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> enum.</p>
+<cite>view_ids</cite> is optional but can be used to filter what document types should be show. Alternatively <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewGroup</span></code> can be used to group several filters together into a separate tab.
+All possible view options can be found in the <code class="xref py py-class docutils literal notranslate"><span class="pre">ViewId</span></code> enum.</p>
 <p>Lastly additional features like multiselect can be enabled or disabled with <cite>enabled_features</cite> or <cite>disabled_features</cite>.
 Some, if not all, appear to be experimental and subject to change. Additionally there appears to exist no documentation about them.
 At the time of writing all Features can be found in the enum <code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code> but any future features, which are not yet present in this enum, should be supported as well if just passed as a string.</p>
